@@ -1,0 +1,232 @@
+/* Resetando estilos padrões */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos do Corpo */
+body {
+  font-family: 'Roboto', sans-serif; /* Mudando a fonte */
+  line-height: 1.6;
+  color: #333;
+  background: linear-gradient(135deg, #dedede, #050c4a);
+
+}
+
+header {
+  background-color: #003366; /* Azul mais sofisticado */
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+#home {
+  position: relative;         /* Necessário para o alinhamento absoluto do texto */
+  text-align: center;    
+  font-size: 1.6rem;
+  font-weight: bold;     /* Centraliza o texto horizontalmente */
+}
+
+.banner img {
+  width: 250px;            /* Tamanho desejado da logo (ajuste conforme necessário) */
+  height: 250px;           /* Mesma altura para manter o formato circular */
+  border-radius: 50%;      /* Arredonda as bordas para torná-la circular */
+  object-fit: cover;       /* Garante que a imagem preencha o círculo sem distorcer */
+  display: block;          /* Garante que a imagem se comporte como um bloco */
+  margin: 0 auto;          /* Centraliza a imagem horizontalmente */
+}
+
+/* Estilos para a seção de produtos */
+#produtos {
+  padding: 2rem;
+}
+
+.produtos-lista {
+  display: flex;
+  flex-wrap: wrap;                /* Faz os itens quebrarem para a próxima linha em telas menores */
+  justify-content: space-around;  /* Distribui os itens de forma espaçada */
+  gap: 20px;                      /* Espaço entre os produtos */
+}
+
+.produto {
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 30%;                     /* Tamanho fixo de cada produto (ajuste conforme necessário) */
+  text-align: center;
+  transition: transform 0.3s ease;
+  max-width: 350px;               /* Limite máximo de largura do produto */
+}
+
+.produto img {
+  width: 100%;                    /* A imagem vai ocupar toda a largura do produto */
+  height: auto;                   /* Mantém a proporção da imagem */
+  max-height: 200px;              /* Limita a altura das imagens para não ficarem grandes demais */
+  object-fit: cover;              /* Garante que a imagem preencha o espaço sem distorcer */
+  border-radius: 8px;             /* Arredonda as bordas da imagem */
+}
+
+.produto:hover {
+  transform: translateY(-10px);   /* Efeito de "flutuar" quando o usuário passa o mouse */
+}
+
+.produto h3 {
+  font-size: 1.5rem;              /* Tamanho do título */
+  margin: 10px 0;
+  color: #003366;                 /* Cor do título */
+}
+
+.produto p {
+  color: #555;
+  font-size: 1rem;
+}
+
+header .logo h1 {
+  font-size: 2.5rem;
+  font-family: 'Montserrat', sans-serif; /* Fonte para títulos */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav ul li a:hover {
+  color: #ff9900; /* Cor vibrante para hover */
+}
+
+section {
+  padding: 2rem;
+}
+
+h2 {
+  font-size: 2.5rem; /* Tamanho maior para títulos */
+  margin-bottom: 1rem;
+  font-family: 'Montserrat', sans-serif; /* Fonte para títulos */
+}
+
+/* Efeito de fade-in */
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+}
+
+.servicos-lista, .produtos-lista {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+/* Estilo do botão de envio */
+#whatsapp-link {
+  display: inline-block;        /* Faz o link se comportar como um botão */
+  background-color: #25d366;    /* Cor verde do WhatsApp */
+  color: white;                 /* Cor do texto */
+  padding: 1rem 2rem;           /* Tamanho do botão */
+  font-size: 1.2rem;            /* Tamanho da fonte */
+  text-decoration: none;        /* Remove sublinhado do link */
+  border-radius: 5px;           /* Bordas arredondadas */
+  text-align: center;           /* Centraliza o texto no botão */
+  width: 100%;                  /* Faz o botão ocupar toda a largura */
+  max-width: 300px;             /* Limita o tamanho máximo do botão */
+  margin: 20px auto;            /* Adiciona margem superior/inferior e centraliza */
+  display: block;               /* Garante que o botão se comporte como bloco */
+}
+
+#whatsapp-link button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+#whatsapp-link:hover {
+  background-color: #128C7E; /* Cor mais escura do WhatsApp para hover */
+  transition: background-color 0.3s ease;  /* Transição suave */
+}
+
+#contato {
+  padding: 2rem;
+  margin-bottom: 80px;  /* Adiciona um espaço abaixo da seção, antes do rodapé */
+}
+
+
+.servico, .produto {
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  flex: 1;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.3s ease;
+}
+
+.servico:hover, .produto:hover {
+  transform: translateY(-10px); /* Efeito de "flutuar" ao passar o mouse */
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #003366; /* Cor azul escuro */
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #ff9900; /* Cor de destaque ao passar o mouse */
+}
+
+footer {
+  background-color: #003366; /* Azul escuro para o rodapé */
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .servicos-lista, .produtos-lista {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .servico, .produto {
+    width: 90%; /* Ajuste de largura para telas menores */
+    margin-bottom: 20px;
+  }
+}
