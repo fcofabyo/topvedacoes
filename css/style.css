@@ -119,7 +119,7 @@ header {
 }
 
 .empresa:hover img {
-  transform: scale(1.05);
+  transform: scale(1.39);
 }
 
 .empresa p {
@@ -234,7 +234,7 @@ h2 {
 
 .servico:hover,
 .produto:hover {
-  transform: translateY(-10px);
+  transform: scale(1.10);
 }
 
 form input,
