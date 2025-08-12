@@ -171,7 +171,8 @@ h2 {
 #contato {
   padding: 2rem;
   margin-bottom: 80px;
-   font-weight: bold;  /* Adiciona um espaço abaixo da seção, antes do rodapé */
+  font-weight: bold;
+  color: #56ef87;  /* Adiciona um espaço abaixo da seção, antes do rodapé */
 }
 
 
