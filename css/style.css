@@ -7,34 +7,33 @@
 
 /* Estilos do Corpo */
 body {
-  font-family: 'Roboto', sans-serif; /* Mudando a fonte */
+  font-family: 'Roboto', sans-serif;
   line-height: 1.6;
   color: #333;
   background: linear-gradient(135deg, #dedede, #050c4a);
-
 }
 
 header {
-  background-color: #003366; /* Azul mais sofisticado */
+  background-color: #003366;
   color: white;
   padding: 1rem;
   text-align: center;
 }
 
 #home {
-  position: relative;         /* Necessário para o alinhamento absoluto do texto */
-  text-align: center;    
+  position: relative;
+  text-align: center;
   font-size: 1.6rem;
-  font-weight: bold;     /* Centraliza o texto horizontalmente */
+  font-weight: bold;
 }
 
 .banner img {
-  width: 250px;            /* Tamanho desejado da logo (ajuste conforme necessário) */
-  height: 250px;           /* Mesma altura para manter o formato circular */
-  border-radius: 50%;      /* Arredonda as bordas para torná-la circular */
-  object-fit: cover;       /* Garante que a imagem preencha o círculo sem distorcer */
-  display: block;          /* Garante que a imagem se comporte como um bloco */
-  margin: 0 auto;          /* Centraliza a imagem horizontalmente */
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
 }
 
 /* Estilos para a seção de produtos */
@@ -44,9 +43,9 @@ header {
 
 .produtos-lista {
   display: flex;
-  flex-wrap: wrap;                /* Faz os itens quebrarem para a próxima linha em telas menores */
-  justify-content: space-around;  /* Distribui os itens de forma espaçada */
-  gap: 20px;                      /* Espaço entre os produtos */
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
 }
 
 .produto {
@@ -55,28 +54,28 @@ header {
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  width: 30%;                     /* Tamanho fixo de cada produto (ajuste conforme necessário) */
+  width: 30%;
   text-align: center;
   transition: transform 0.3s ease;
-  max-width: 350px;               /* Limite máximo de largura do produto */
+  max-width: 350px;
 }
 
 .produto img {
-  width: 100%;                    /* A imagem vai ocupar toda a largura do produto */
-  height: auto;                   /* Mantém a proporção da imagem */
-  max-height: 200px;              /* Limita a altura das imagens para não ficarem grandes demais */
-  object-fit: cover;              /* Garante que a imagem preencha o espaço sem distorcer */
-  border-radius: 8px;             /* Arredonda as bordas da imagem */
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 .produto:hover {
-  transform: translateY(-10px);   /* Efeito de "flutuar" quando o usuário passa o mouse */
+  transform: translateY(-10px);
 }
 
 .produto h3 {
-  font-size: 1.5rem;              /* Tamanho do título */
+  font-size: 1.5rem;
   margin: 10px 0;
-  color: #003366;                 /* Cor do título */
+  color: #003366;
 }
 
 .produto p {
@@ -84,9 +83,56 @@ header {
   font-size: 1rem;
 }
 
+/* Estilos para a seção Empresas */
+#empresas {
+  padding: 2rem;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+#empresas h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.empresa-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px 50px; /* AUMENTADO o espaçamento entre logos */
+  margin-top: 2rem;
+}
+
+.empresa {
+  max-width: 180px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.empresa img {
+  width: 100%;
+  height: 90px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.empresa:hover img {
+  transform: scale(1.05);
+}
+
+.empresa p {
+  font-size: 1rem;
+  color: #333;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* Header */
 header .logo h1 {
   font-size: 2.5rem;
-  font-family: 'Montserrat', sans-serif; /* Fonte para títulos */
+  font-family: 'Montserrat', sans-serif;
 }
 
 nav ul {
@@ -108,7 +154,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #ff9900; /* Cor vibrante para hover */
+  color: #ff9900;
 }
 
 section {
@@ -116,9 +162,9 @@ section {
 }
 
 h2 {
-  font-size: 2.5rem; /* Tamanho maior para títulos */
+  font-size: 2.5rem;
   margin-bottom: 1rem;
-  font-family: 'Montserrat', sans-serif; /* Fonte para títulos */
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Efeito de fade-in */
@@ -129,10 +175,10 @@ h2 {
 
 .fade-in.visible {
   opacity: 1;
-  
 }
 
-.servicos-lista, .produtos-lista {
+.servicos-lista,
+.produtos-lista {
   display: flex;
   gap: 20px;
   justify-content: space-around;
@@ -140,18 +186,18 @@ h2 {
 
 /* Estilo do botão de envio */
 #whatsapp-link {
-  display: inline-block;        /* Faz o link se comportar como um botão */
-  background-color: #25d366;    /* Cor verde do WhatsApp */
-  color: white;                 /* Cor do texto */
-  padding: 1rem 2rem;           /* Tamanho do botão */
-  font-size: 1.2rem;            /* Tamanho da fonte */
-  text-decoration: none;        /* Remove sublinhado do link */
-  border-radius: 5px;           /* Bordas arredondadas */
-  text-align: center;           /* Centraliza o texto no botão */
-  width: 100%;                  /* Faz o botão ocupar toda a largura */
-  max-width: 300px;             /* Limita o tamanho máximo do botão */
-  margin: 20px auto;            /* Adiciona margem superior/inferior e centraliza */
-  display: block;               /* Garante que o botão se comporte como bloco */
+  display: inline-block;
+  background-color: #25d366;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  margin: 20px auto;
+  display: block;
 }
 
 #whatsapp-link button {
@@ -164,33 +210,35 @@ h2 {
 }
 
 #whatsapp-link:hover {
-  background-color: #128C7E; /* Cor mais escura do WhatsApp para hover */
-  transition: background-color 0.3s ease;  /* Transição suave */
+  background-color: #128C7E;
+  transition: background-color 0.3s ease;
 }
 
 #contato {
   padding: 2rem;
   margin-bottom: 80px;
   font-weight: bold;
-  color: #56ef87;  /* Adiciona um espaço abaixo da seção, antes do rodapé */
+  color: #56ef87;
 }
 
-
-.servico, .produto {
+.servico,
+.produto {
   background-color: white;
   padding: 1rem;
   border: 1px solid #ddd;
   flex: 1;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
-.servico:hover, .produto:hover {
-  transform: translateY(-10px); /* Efeito de "flutuar" ao passar o mouse */
+.servico:hover,
+.produto:hover {
+  transform: translateY(-10px);
 }
 
-form input, form textarea {
+form input,
+form textarea {
   width: 100%;
   padding: 0.8rem;
   margin-bottom: 1rem;
@@ -199,7 +247,7 @@ form input, form textarea {
 }
 
 form button {
-  background-color: #003366; /* Cor azul escuro */
+  background-color: #003366;
   color: white;
   border: none;
   padding: 1rem;
@@ -208,11 +256,11 @@ form button {
 }
 
 form button:hover {
-  background-color: #ff9900; /* Cor de destaque ao passar o mouse */
+  background-color: #ff9900;
 }
 
 footer {
-  background-color: #003366; /* Azul escuro para o rodapé */
+  background-color: #003366;
   color: white;
   text-align: center;
   padding: 1rem;
@@ -223,13 +271,27 @@ footer {
 
 /* Responsividade */
 @media (max-width: 768px) {
-  .servicos-lista, .produtos-lista {
+  .servicos-lista,
+  .produtos-lista {
     flex-direction: column;
     align-items: center;
   }
 
-  .servico, .produto {
-    width: 90%; /* Ajuste de largura para telas menores */
+  .servico,
+  .produto {
+    width: 90%;
     margin-bottom: 20px;
   }
+
+  .empresa-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .empresa {
+    max-width: 140px;
+  }
 }
+
+
