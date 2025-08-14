@@ -38,7 +38,7 @@ document.getElementById('whatsapp-link').addEventListener('click', function() {
   const numeroWhatsapp = '5511997988328';  // Seu número de WhatsApp real
 
   // Criar o link do WhatsApp com a mensagem
-  const mensagemPronta = `Olá, meu nome é ${nome} e gostaria de falar sobre: ${mensagem}`;
+  const mensagemPronta = `Olá, meu nome é ${nome} e gostaria de pedir: ${mensagem}`;
   const linkWhatsapp = `https://wa.me/${numeroWhatsapp}?text=${encodeURIComponent(mensagemPronta)}`;
 
   // Redireciona para o WhatsApp
