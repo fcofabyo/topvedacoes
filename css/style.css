@@ -343,6 +343,8 @@ footer {
   .empresa-container {
     flex-direction: column;
     gap: 30px;
+    align-items: center;
+
   }
 }
 
